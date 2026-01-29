@@ -5,6 +5,7 @@
 //  MQTT 연결 설정 화면
 //
 
+#if canImport(UIKit)
 import SwiftUI
 
 struct ConnectionSettingsView: View {
@@ -183,9 +184,12 @@ struct ConnectionSettingsView: View {
     }
 }
 
+#if DEBUG
 #Preview {
     ConnectionSettingsView(
         config: .constant(.default),
         onApplyPreset: { _ in }
     )
 }
+#endif
+#endif

@@ -5,6 +5,7 @@
 //  데이터 생성 컨트롤 패널
 //
 
+#if canImport(UIKit)
 import SwiftUI
 
 struct ControlPanelView: View {
@@ -221,6 +222,7 @@ struct IntervalPickerView: View {
     }
 }
 
+#if DEBUG
 #Preview {
     ControlPanelView(
         isGenerating: .constant(false),
@@ -235,3 +237,5 @@ struct IntervalPickerView: View {
     .padding()
     .background(Color.black)
 }
+#endif
+#endif

@@ -5,6 +5,7 @@
 //  메인 화면 ViewModel
 //
 
+#if canImport(UIKit)
 import Foundation
 import Combine
 import SwiftUI
@@ -214,3 +215,4 @@ class MainViewModel: ObservableObject {
         "\(config.topicPrefix)/{sensor_id}/data"
     }
 }
+#endif

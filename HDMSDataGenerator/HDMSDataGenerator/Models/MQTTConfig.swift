@@ -5,6 +5,7 @@
 //  MQTT 연결 설정 모델
 //
 
+#if canImport(UIKit)
 import Foundation
 
 // MARK: - Topic Preset
@@ -154,3 +155,4 @@ struct LogEntry: Identifiable {
         return formatter.string(from: timestamp)
     }
 }
+#endif

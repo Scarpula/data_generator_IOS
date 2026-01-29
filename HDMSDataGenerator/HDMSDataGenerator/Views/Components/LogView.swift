@@ -5,6 +5,7 @@
 //  로그 출력 뷰
 //
 
+#if canImport(UIKit)
 import SwiftUI
 
 struct LogView: View {
@@ -144,6 +145,7 @@ struct CompactLogView: View {
     }
 }
 
+#if DEBUG
 #Preview {
     VStack {
         LogView(
@@ -159,3 +161,5 @@ struct CompactLogView: View {
     .padding()
     .background(Color.black)
 }
+#endif
+#endif

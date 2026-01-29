@@ -6,6 +6,7 @@
 //  원본: Python Tkinter 버전 (mqtt_data_generator_v2.py)
 //
 
+#if canImport(UIKit)
 import SwiftUI
 
 @main
@@ -41,3 +42,4 @@ struct HDMSDataGeneratorApp: App {
         UINavigationBar.appearance().compactAppearance = navBarAppearance
     }
 }
+#endif

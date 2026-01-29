@@ -5,6 +5,7 @@
 //  센서 관리 화면
 //
 
+#if canImport(UIKit)
 import SwiftUI
 
 struct SensorManagementView: View {
@@ -258,6 +259,7 @@ struct AddSensorView: View {
     }
 }
 
+#if DEBUG
 #Preview {
     SensorManagementView(
         sensors: .constant([
@@ -268,3 +270,5 @@ struct AddSensorView: View {
         onRemoveSensor: { _ in }
     )
 }
+#endif
+#endif

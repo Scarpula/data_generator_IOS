@@ -5,6 +5,7 @@
 //  연결 상태 표시 카드
 //
 
+#if canImport(UIKit)
 import SwiftUI
 
 struct ConnectionStatusCard: View {
@@ -127,6 +128,7 @@ struct ConnectionStatusCard: View {
     }
 }
 
+#if DEBUG
 #Preview {
     VStack(spacing: 20) {
         ConnectionStatusCard(
@@ -153,3 +155,5 @@ struct ConnectionStatusCard: View {
     .padding()
     .background(Color.black)
 }
+#endif
+#endif

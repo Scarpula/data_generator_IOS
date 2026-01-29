@@ -5,6 +5,7 @@
 //  메인 화면
 //
 
+#if canImport(UIKit)
 import SwiftUI
 
 struct MainView: View {
@@ -269,7 +270,10 @@ struct LogsView: View {
     }
 }
 
+#if DEBUG
 #Preview {
     MainView()
         .preferredColorScheme(.dark)
 }
+#endif
+#endif

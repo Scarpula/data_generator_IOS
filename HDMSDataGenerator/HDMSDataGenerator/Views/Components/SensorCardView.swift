@@ -5,6 +5,7 @@
 //  센서 타입별 카드 뷰
 //
 
+#if canImport(UIKit)
 import SwiftUI
 
 struct SensorCardView: View {
@@ -203,6 +204,7 @@ struct SensorRowView: View {
     }
 }
 
+#if DEBUG
 #Preview {
     SensorCardView(
         sensorType: .current,
@@ -217,3 +219,5 @@ struct SensorRowView: View {
     .padding()
     .background(Color.black)
 }
+#endif
+#endif

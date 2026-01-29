@@ -5,15 +5,16 @@
 //  앱 테마 및 색상 정의
 //
 
+#if canImport(UIKit)
 import SwiftUI
 
 // MARK: - App Colors
 extension Color {
     // Primary Colors
-    static let appPrimary = Color("AppPrimary")
-    static let appSecondary = Color("AppSecondary")
-    static let appBackground = Color("AppBackground")
-    static let appCardBackground = Color("AppCardBackground")
+    static let appPrimary = Color(red: 0.3, green: 0.6, blue: 1.0)
+    static let appSecondary = Color(red: 0.5, green: 0.4, blue: 0.9)
+    static let appBackground = Color(red: 0.05, green: 0.05, blue: 0.15)
+    static let appCardBackground = Color(red: 0.12, green: 0.12, blue: 0.2)
 
     // Sensor Colors
     static let sensorYellow = Color(red: 1.0, green: 0.8, blue: 0.0)
@@ -202,3 +203,4 @@ struct IconButtonStyle: ButtonStyle {
             .animation(.easeInOut(duration: 0.1), value: configuration.isPressed)
     }
 }
+#endif

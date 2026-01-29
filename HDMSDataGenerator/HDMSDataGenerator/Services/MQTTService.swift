@@ -5,6 +5,7 @@
 //  MQTT 클라이언트 서비스 (CocoaMQTT 기반)
 //
 
+#if canImport(UIKit)
 import Foundation
 import Combine
 import CocoaMQTT
@@ -181,3 +182,4 @@ extension MQTTService: CocoaMQTTDelegate {
         completionHandler(true)
     }
 }
+#endif
